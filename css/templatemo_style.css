@@ -728,6 +728,7 @@ ul.templatemo-project-gallery  li  a img:hover {
             float:right;
             margin-bottom :40px; 
       }
+   
 }
 
 @media (max-width: 380px) {
@@ -766,6 +767,8 @@ ul.templatemo-project-gallery  li  a img:hover {
 	 .team_hr {
 		width: 30%;
 	}
+    
+    
 }
 
 @media (min-width:536px) and ( max-width: 585px) {
@@ -778,6 +781,8 @@ ul.templatemo-project-gallery  li  a img:hover {
 	 .team_hr {
 		width: 21%;
 	}
+   
+  
 }
 
 @media  ( max-width: 410px) {
@@ -787,3 +792,5 @@ ul.templatemo-project-gallery  li  a img:hover {
 }
 
 }
+
+
