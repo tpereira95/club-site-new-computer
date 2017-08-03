@@ -247,9 +247,15 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     float: left;
 }
 
+.team_hr_short {
+    border: 1px solid #fff; 
+    width: 30.0%; 
+    float: left;
+}
+
 .team_hr_left {
     margin-right: 30px;
-    margin-left: 15px; 
+    margin-left: 30px; 
 }
 
 .team_hr_right {
