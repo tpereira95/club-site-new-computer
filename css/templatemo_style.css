@@ -84,6 +84,26 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     top: 0;
 }
 
+@media only screen and (min-device-width : 768px){
+    .login-form{
+        float: none;
+        
+    }
+    .login-form-submit{
+       
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media only screen and (min-device-width : 768px){
+    .login-form{
+        float: none;
+        
+    }
+}
+
 @media (min-width: 768px) {
     #templatemo-carousel .carousel-caption p {
         margin-bottom: 20px;
@@ -96,12 +116,15 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
         right: 20%;
         left: 20%;
     }
+    
+    
 }
 
 @media (max-width: 768px) {
     #templatemo-carousel .carousel-caption {
         padding-bottom: 20px;
     }
+    
 }
 
 @media (max-width: 1024px) {
@@ -120,6 +143,9 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 /* ------ End of Carousel ----- */
 
 /* ------ Welcome & Slogna ------ */
+
+
+
 .templatemo-welcome {
     border-bottom: 1px solid #cccccc;
     min-height: 230px;
@@ -605,6 +631,8 @@ ul.templatemo-project-gallery  li  a img:hover {
     font-style: italic;
 }
 
+
+
 .btn_loadmore {
 	margin-top:30px; 
 	margin-bottom:80px;
@@ -681,6 +709,22 @@ ul.templatemo-project-gallery  li  a img:hover {
         height:220px;
         width:220px;
     }
+    
+    .login-form{
+        float: right;
+        margin-top: 20px;
+    }
+    
+    .login-form-submit{
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+    }
+    
+}
+
+
 	
 }
 
@@ -757,6 +801,17 @@ ul.templatemo-project-gallery  li  a img:hover {
 	 .team_hr {
 		width: 37%; 
 	}
+    
+    .login-form{
+        float: right;
+        margin-top: 20px;
+       
+    }
+    
+    .login-form-submit{
+        margin-left: 10px;
+        margin-top: 40px;
+    }
 }
 
 @media (min-width:683px) and ( max-width: 991px) {
@@ -787,6 +842,10 @@ ul.templatemo-project-gallery  li  a img:hover {
 	 .team_hr {
 		width: 21%;
 	}
+    
+    .login-form-submit{
+        margin-bottom: 20px;
+    }
    
   
 }
@@ -795,6 +854,9 @@ ul.templatemo-project-gallery  li  a img:hover {
 	 .team_hr {
 		width: 11%;
 	}
+    .login-form-submit{
+        margin-bottom: 20px;
+    }
 }
 
 }
