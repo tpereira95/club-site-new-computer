@@ -49,3 +49,29 @@ var app = angular.module('tkmcApp');
             $scope.showErrorAlert = false;
         }
 }]);
+
+app.controller("loginCtrl", [ '$scope', '$http', function($scope, $http, $state) {
+ 
+    $http.defaults.headers.post["Content-Type"] = "application/json";
+     
+    $scope.submitLogin = function() {
+        $http({
+            url : 'localhost:8080/login',
+            method : "POST",
+            data : {
+                'userID' : $scope.userid,
+                'password' : $scope.password
+            }
+        }).success(function(data, response, status) {
+            console.log(response.data);
+            $scope.data = data;
+            //$scope.message = response.data;
+             $state.go('/tkmc/welcome.html');
+        }, function(response) {
+            //fail case
+            console.log(response);
+            $scope.message = response;
+        });
+ 
+    };
+} ]);

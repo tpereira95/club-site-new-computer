@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 /* ------ Carousel ----- */
 
 #templatemo-carousel {
-    background: url('../images/carousel-group.gif') no-repeat; 
+    background: url('../images/hero-group.jpg') no-repeat; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -84,6 +84,26 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     top: 0;
 }
 
+@media only screen and (min-device-width : 768px){
+    .login-form{
+        float: none;
+        
+    }
+    .login-form-submit{
+       
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media only screen and (min-device-width : 768px){
+    .login-form{
+        float: none;
+        
+    }
+}
+
 @media (min-width: 768px) {
     #templatemo-carousel .carousel-caption p {
         margin-bottom: 20px;
@@ -96,17 +116,20 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
         right: 20%;
         left: 20%;
     }
+    
+    
 }
 
 @media (max-width: 768px) {
     #templatemo-carousel .carousel-caption {
         padding-bottom: 20px;
     }
+    
 }
 
 @media (max-width: 1024px) {
     #templatemo-carousel {
-        background: url('../images/carousel-group.gif') no-repeat center center; 
+        background: url('../images/hero-group.jpg') no-repeat center center; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -120,6 +143,9 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 /* ------ End of Carousel ----- */
 
 /* ------ Welcome & Slogna ------ */
+
+
+
 .templatemo-welcome {
     border-bottom: 1px solid #cccccc;
     min-height: 230px;
@@ -130,7 +156,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     font-weight: normal;
     font-size: 42px;
     margin: 60px 0;
-    color: #333333;
+    color: #0b0b0b;
 }
 
 .templatemo-service {
@@ -247,9 +273,15 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     float: left;
 }
 
+.team_hr_short {
+    border: 1px solid #fff; 
+    width: 30.0%; 
+    float: left;
+}
+
 .team_hr_left {
     margin-right: 30px;
-    margin-left: 15px; 
+    margin-left: 30px; 
 }
 
 .team_hr_right {
@@ -262,7 +294,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 .templatemo-team {
 /*    background: url('../images/backgroundsteel.jpeg') ; */
-    background-color: #3c3636;
+    background-color: #0d0901;
     font-family:  'Open Sans', sans-serif;
     min-height:590px;
     color:#ffffff;
@@ -599,6 +631,8 @@ ul.templatemo-project-gallery  li  a img:hover {
     font-style: italic;
 }
 
+
+
 .btn_loadmore {
 	margin-top:30px; 
 	margin-bottom:80px;
@@ -675,6 +709,22 @@ ul.templatemo-project-gallery  li  a img:hover {
         height:220px;
         width:220px;
     }
+    
+    .login-form{
+        float: right;
+        margin-top: 20px;
+    }
+    
+    .login-form-submit{
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+    }
+    
+}
+
+
 	
 }
 
@@ -728,6 +778,7 @@ ul.templatemo-project-gallery  li  a img:hover {
             float:right;
             margin-bottom :40px; 
       }
+   
 }
 
 @media (max-width: 380px) {
@@ -750,6 +801,17 @@ ul.templatemo-project-gallery  li  a img:hover {
 	 .team_hr {
 		width: 37%; 
 	}
+    
+    .login-form{
+        float: right;
+        margin-top: 20px;
+       
+    }
+    
+    .login-form-submit{
+        margin-left: 10px;
+        margin-top: 40px;
+    }
 }
 
 @media (min-width:683px) and ( max-width: 991px) {
@@ -766,6 +828,8 @@ ul.templatemo-project-gallery  li  a img:hover {
 	 .team_hr {
 		width: 30%;
 	}
+    
+    
 }
 
 @media (min-width:536px) and ( max-width: 585px) {
@@ -778,12 +842,23 @@ ul.templatemo-project-gallery  li  a img:hover {
 	 .team_hr {
 		width: 21%;
 	}
+    
+    .login-form-submit{
+        margin-bottom: 20px;
+    }
+   
+  
 }
 
 @media  ( max-width: 410px) {
 	 .team_hr {
 		width: 11%;
 	}
+    .login-form-submit{
+        margin-bottom: 20px;
+    }
 }
 
 }
+
+
