@@ -127,9 +127,22 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     
 }
 
+
 @media (max-width: 1024px) {
     #templatemo-carousel {
         background: url('../images/hero-group.jpg') no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow-x: hidden;
+        margin-bottom:0;
+        height: 500px;
+    }
+}
+@media (min-width: 1025px) {
+    #templatemo-carousel {
+        background: url('../images/caro4.JPG') no-repeat center center; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
