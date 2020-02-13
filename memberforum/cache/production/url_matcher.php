@@ -114,6 +114,40 @@ class phpbb_url_matcher extends Symfony\Component\Routing\Matcher\UrlMatcher
 
         }
 
+        if (0 === strpos($pathinfo, '/t')) {
+            if (0 === strpos($pathinfo, '/thankslist')) {
+                // gfksx_ThanksForPosts_thankslist_controller_user
+                if (preg_match('#^/thankslist/(?P<mode>\\w+)/(?P<author_id>\\d+)/(?P<give>true|false)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'gfksx_ThanksForPosts_thankslist_controller_user')), array (  '_controller' => 'gfksx.ThanksForPosts.controller.thankslist:main',  'top' => 0,  'start' => 0,  'sort_key' => 'a',  'sort_dir' => 'd',  'topic_id' => 0,  'return_chars' => 300,));
+                }
+
+                // gfksx_ThanksForPosts_thankslist_controller
+                if ('/thankslist' === $pathinfo) {
+                    return array (  '_controller' => 'gfksx.ThanksForPosts.controller.thankslist:main',  'mode' => '',  'author_id' => 1,  'give' => '',  'top' => 0,  'start' => 0,  'sort_key' => 'e',  'sort_dir' => 'd',  'return_chars' => 300,  '_route' => 'gfksx_ThanksForPosts_thankslist_controller',);
+                }
+
+            }
+
+            if (0 === strpos($pathinfo, '/toplist')) {
+                // gfksx_ThanksForPosts_toplist_controller_mode
+                if (preg_match('#^/toplist(?:/(?P<mode>\\w+))?$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'gfksx_ThanksForPosts_toplist_controller_mode')), array (  '_controller' => 'gfksx.ThanksForPosts.controller.toplist:main',  'mode' => '',  'start' => 0,  'return_chars' => 300,));
+                }
+
+                // gfksx_ThanksForPosts_toplist_controller
+                if ('/toplist' === $pathinfo) {
+                    return array (  '_controller' => 'gfksx.ThanksForPosts.controller.toplist:main',  'mode' => '',  'start' => 0,  'return_chars' => 300,  '_route' => 'gfksx_ThanksForPosts_toplist_controller',);
+                }
+
+            }
+
+        }
+
+        // paul999_mention_controller
+        if ('/mentionloc' === $pathinfo) {
+            return array (  '_controller' => 'paul999.mention.controller:handle',  '_route' => 'paul999_mention_controller',);
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

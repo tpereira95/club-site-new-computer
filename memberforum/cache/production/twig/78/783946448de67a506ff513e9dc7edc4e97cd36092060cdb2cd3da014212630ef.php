@@ -157,7 +157,7 @@ class __TwigTemplate_9baf9b417466ff8b3b0840f2a2996a3833ff41b6015e97cbc90a5883af0
                 $local_file = $this->getEnvironment()->findTemplate($asset_path);
                 $asset->set_path($local_file, true);
             }
-            $asset->add_assets_version('2');
+            $asset->add_assets_version('6');
         }
         $this->getEnvironment()->get_assets_bag()->add_script($asset);        // line 53
         echo "
@@ -314,6 +314,10 @@ class __TwigTemplate_9baf9b417466ff8b3b0840f2a2996a3833ff41b6015e97cbc90a5883af0
 
 \t";
             // line 120
+            $previous_look_up_order = $this->env->getNamespaceLookUpOrder();
+            $this->env->setNamespaceLookUpOrder(array('phpbb_mediaembed', '__main__'));
+            $this->env->loadTemplate('@phpbb_mediaembed/event/posting_editor_buttons_custom_tags_before.html')->display($context);
+            $this->env->setNamespaceLookUpOrder($previous_look_up_order);
             // line 121
             echo "
 \t";
@@ -362,7 +366,7 @@ class __TwigTemplate_9baf9b417466ff8b3b0840f2a2996a3833ff41b6015e97cbc90a5883af0
 
     public function getDebugInfo()
     {
-        return array (  350 => 128,  347 => 127,  338 => 124,  325 => 123,  321 => 122,  318 => 121,  317 => 120,  313 => 118,  310 => 117,  304 => 115,  302 => 114,  297 => 113,  295 => 112,  291 => 111,  287 => 110,  283 => 109,  279 => 108,  270 => 105,  262 => 101,  259 => 100,  251 => 96,  248 => 95,  240 => 91,  238 => 90,  232 => 87,  226 => 84,  220 => 81,  213 => 78,  205 => 74,  203 => 73,  197 => 70,  191 => 67,  185 => 64,  182 => 63,  181 => 62,  172 => 57,  168 => 55,  166 => 54,  163 => 53,  152 => 52,  143 => 46,  136 => 42,  125 => 33,  114 => 31,  110 => 30,  106 => 29,  102 => 28,  98 => 27,  94 => 26,  90 => 25,  86 => 24,  82 => 23,  78 => 22,  74 => 21,  70 => 20,  66 => 19,  62 => 18,  58 => 17,  54 => 16,  38 => 11,  25 => 5,  19 => 1,);
+        return array (  354 => 128,  351 => 127,  342 => 124,  329 => 123,  325 => 122,  322 => 121,  317 => 120,  313 => 118,  310 => 117,  304 => 115,  302 => 114,  297 => 113,  295 => 112,  291 => 111,  287 => 110,  283 => 109,  279 => 108,  270 => 105,  262 => 101,  259 => 100,  251 => 96,  248 => 95,  240 => 91,  238 => 90,  232 => 87,  226 => 84,  220 => 81,  213 => 78,  205 => 74,  203 => 73,  197 => 70,  191 => 67,  185 => 64,  182 => 63,  181 => 62,  172 => 57,  168 => 55,  166 => 54,  163 => 53,  152 => 52,  143 => 46,  136 => 42,  125 => 33,  114 => 31,  110 => 30,  106 => 29,  102 => 28,  98 => 27,  94 => 26,  90 => 25,  86 => 24,  82 => 23,  78 => 22,  74 => 21,  70 => 20,  66 => 19,  62 => 18,  58 => 17,  54 => 16,  38 => 11,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */

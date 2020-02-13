@@ -101,7 +101,7 @@ class __TwigTemplate_252b818c2ebb83723c0d084ea7fcc50da870b767290ab5acd6db080fef0
                 $local_file = $this->getEnvironment()->findTemplate($asset_path);
                 $asset->set_path($local_file, true);
             }
-            $asset->add_assets_version('2');
+            $asset->add_assets_version('6');
         }
         $this->getEnvironment()->get_assets_bag()->add_script($asset);        // line 31
         $asset_file = "ajax.js";
@@ -112,7 +112,7 @@ class __TwigTemplate_252b818c2ebb83723c0d084ea7fcc50da870b767290ab5acd6db080fef0
                 $local_file = $this->getEnvironment()->findTemplate($asset_path);
                 $asset->set_path($local_file, true);
             }
-            $asset->add_assets_version('2');
+            $asset->add_assets_version('6');
         }
         $this->getEnvironment()->get_assets_bag()->add_script($asset);        // line 32
         echo "

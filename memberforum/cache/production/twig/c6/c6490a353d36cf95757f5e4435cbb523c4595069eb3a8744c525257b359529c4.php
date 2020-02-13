@@ -129,7 +129,7 @@ class __TwigTemplate_0c3c50f8868d9b35fab3b21ced55814e2b29de3be85e4c50a24859c517c
                 $local_file = $this->getEnvironment()->findTemplate($asset_path);
                 $asset->set_path($local_file, true);
             }
-            $asset->add_assets_version('2');
+            $asset->add_assets_version('6');
         }
         $this->getEnvironment()->get_assets_bag()->add_script($asset);        // line 27
         echo "\t</dd>

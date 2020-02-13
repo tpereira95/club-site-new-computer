@@ -1,4 +1,4 @@
 <?php exit; ?>
-1565122004
-163
-a:1:{s:13:"phpbb/viglink";a:4:{s:8:"ext_name";s:13:"phpbb/viglink";s:10:"ext_active";s:1:"1";s:9:"ext_state";s:4:"b:0;";s:8:"ext_path";s:18:"ext/phpbb/viglink/";}}
+1599345203
+833
+a:5:{s:15:"ftc2/autoresize";a:4:{s:8:"ext_name";s:15:"ftc2/autoresize";s:10:"ext_active";s:1:"1";s:9:"ext_state";s:4:"b:0;";s:8:"ext_path";s:20:"ext/ftc2/autoresize/";}s:20:"gfksx/ThanksForPosts";a:4:{s:8:"ext_name";s:20:"gfksx/ThanksForPosts";s:10:"ext_active";s:1:"1";s:9:"ext_state";s:4:"b:0;";s:8:"ext_path";s:25:"ext/gfksx/ThanksForPosts/";}s:15:"paul999/mention";a:4:{s:8:"ext_name";s:15:"paul999/mention";s:10:"ext_active";s:1:"1";s:9:"ext_state";s:4:"b:0;";s:8:"ext_path";s:20:"ext/paul999/mention/";}s:16:"phpbb/mediaembed";a:4:{s:8:"ext_name";s:16:"phpbb/mediaembed";s:10:"ext_active";s:1:"1";s:9:"ext_state";s:4:"b:0;";s:8:"ext_path";s:21:"ext/phpbb/mediaembed/";}s:13:"phpbb/viglink";a:4:{s:8:"ext_name";s:13:"phpbb/viglink";s:10:"ext_active";s:1:"1";s:9:"ext_state";s:4:"b:0;";s:8:"ext_path";s:18:"ext/phpbb/viglink/";}}
