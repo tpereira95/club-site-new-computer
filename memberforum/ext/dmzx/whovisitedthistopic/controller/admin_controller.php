@@ -103,15 +103,16 @@ class admin_controller
 	protected function set_options()
 	{
 		$this->config->set('whovisitedthistopic_allow_topics', $this->request->variable('whovisitedthistopic_allow_topics', 1));
-		$this->config->set('whovisitedthistopic_value', $this->request->variable('whovisitedthistopic_value', 10));
+		$this->config->set('whovisitedthistopic_value', $this->request->variable('whovisitedthistopic_value', 25));
 		$this->config->set('whovisitedthistopic_allow_memberpage', $this->request->variable('whovisitedthistopic_allow_memberpage', 1));
-		$this->config->set('whovisitedthistopic_visit_value', $this->request->variable('whovisitedthistopic_visit_value', 10));
+		$this->config->set('whovisitedthistopic_visit_value', $this->request->variable('whovisitedthistopic_visit_value', 25));
 		$this->config->set('whovisitedthistopic_allow_count', $this->request->variable('whovisitedthistopic_allow_count', 1));
 		$this->config->set('whovisitedthistopic_show_avatar', $this->request->variable('whovisitedthistopic_show_avatar', 1));
 	}
 
 	/**
 	* Set page url
+    
 	*
 	* @param string $u_action Custom form action
 	* @return null

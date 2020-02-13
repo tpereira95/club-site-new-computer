@@ -20,8 +20,8 @@ class install_whovisitedthistopic extends \phpbb\db\migration\migration
 	{
 		return array(
 			// Add configs
-			array('config.add', array('whovisitedthistopic_value', 10)),
-			array('config.add', array('whovisitedthistopic_visit_value', 10)),
+			array('config.add', array('whovisitedthistopic_value', 21)),
+			array('config.add', array('whovisitedthistopic_visit_value', 25)),
 			array('config.add', array('whovisitedthistopic_allow_topics', 1)),
 			array('config.add', array('whovisitedthistopic_allow_memberpage', 1)),
 			array('config.add', array('whovisitedthistopic_allow_count', 1)),
