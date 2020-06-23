@@ -50,6 +50,15 @@
           ga('create', 'UA-96255929-1', 'auto');
           ga('send', 'pageview');
         </script>
+        
+        <script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
+        <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LeDeOMUAAAAAGSteClMtUXthwPo6xxTjcdWgGMP', {action: 'homepage'}).then(function(token) {
+               ...
+            });
+        });
+        </script>
 
         <script type="text/javascript">
             $(window).load(function(){
@@ -565,6 +574,19 @@
                                 </div>
                             </div>
                         </li>
+                        <li class="col-lg-3 col-md-3 col-sm-6 ">
+                            <div class="text-center">
+                                <div class="member-thumb">
+                                    <img src="images/tkcross.jpg" class="img-responsive " alt="William" />
+                                    <div class="thumb-overlay">
+                                    </div>
+                                </div>
+                                <div class="team-inner">
+                                    <p class="team-inner-header">Dave Hanson</p>
+                                    <p class="team-inner-subtext">Provisional Knight</p>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 <div class="row">
                     <div class="templatemo-line-header">
@@ -575,19 +597,7 @@
                     </div>
                 <div class="clearfix"> </div>
                 <ul class="row row_team">
-                    <li class="col-lg-3 col-md-3 col-sm-6 ">
-                            <div class="text-center">
-                                <div class="member-thumb">
-                                    <img src="images/tkcross.jpg" class="img-responsive " alt="William" />
-                                    <div class="thumb-overlay">
-                                    </div>
-                                </div>
-                                <div class="team-inner">
-                                    <p class="team-inner-header">Dave Hanson</p>
-                                    <p class="team-inner-subtext">Prospect</p>
-                                </div>
-                            </div>
-                        </li>
+                    
                     </ul> 
                 </div>
             </div>
@@ -1292,6 +1302,20 @@
                                         <h5>EAST COAST VACATION</h5>
                                         <hr />
                                         <h4>Camping Trip</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-2  gallery gallery-fun" >
+                            <a class="colorbox" href="images/hanson_task.jpg" data-group="gallery-fun">
+                                <div class="templatemo-project-box">
+
+                                    <img src="images/hanson_task.jpg" class="img-responsive" alt="gallery" />
+
+                                    <div class="project-overlay">
+                                        <h5>PROSPECT TASK</h5>
+                                        <hr />
+                                        <h4>Membership</h4>
                                     </div>
                                 </div>
                             </a>
