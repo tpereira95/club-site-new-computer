@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 /* ------ Carousel ----- */
 
 #templatemo-carousel {
-    background: url('../images/hero-group.jpg') no-repeat; 
+    background: url('../images/fish-chip-ride.jpg') no-repeat; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 @media (max-width: 1024px) {
     #templatemo-carousel {
-        background: url('../images/hero-group.jpg') no-repeat center center; 
+        background: url('../images/fish-chip-ride.jpg') no-repeat center center; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -281,7 +281,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .team_hr {
-    border: 1px solid #fff; 
+    border: 1px solid #333333; 
     width: 39.5%; 
     float: left;
 }
@@ -307,10 +307,10 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 .templatemo-team {
 /*    background: url('../images/backgroundsteel.jpeg') ; */
-    background-color: #d9b468;
+  /*  background-color: #d9b468; */
     font-family:  'Open Sans', sans-serif;
     min-height:590px;
-    color:#ffffff;
+    color:#ccccc;
 
 }
 .templatemo-line-header {
@@ -736,7 +736,12 @@ ul.templatemo-project-gallery  li  a img:hover {
     }
     
 }
-
+ img-all__samesize {
+    float: left;
+    width:  20px;
+    height: 20px;
+    object-fit: cover;
+}
 
 	
 }
